@@ -1,0 +1,193 @@
+@media only screen and (max-width: 768px) {
+
+    /* General Grid Layout Adjustments */
+    .grid-layout {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "iphone6s iphone6s iphone6s iphone6s"
+            "learn-more learn-more learn-more learn-more"
+            "keyboard keyboard keyboard keyboard"
+            "imac imac imac imac"
+            "icloud icloud icloud icloud"
+            "games games games games"
+            "best-choice best-choice best-choice best-choice"
+            "twitter twitter twitter twitter"
+            "popular popular popular popular"
+            "display display display display";
+        height: auto;
+    }
+
+    /* Adjusting iPhone 6s Section */
+    .iphone6s-dis {
+        margin-top: 10px;
+        margin-left: 10px;
+        width: 80%;
+    }
+
+    .iphone6s-img {
+        padding-top: 100px;
+        margin: 0;
+        width: 100px;
+    }
+
+    .iphone6s-img img {
+        margin-top: 20px;
+    }
+
+    /* Learn More Section */
+    .learn-more {
+        padding: 5%;
+    }
+
+    .learn-more-container h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    /* Keyboard Section */
+    .keyboard h2 {
+        font-size: 18px;
+        line-height: 24px;
+        max-width: 160px;
+    }
+
+    /* iMac Section */
+    .imac-container {
+        flex-direction: column;
+    }
+
+    .imac-disc {
+        padding: 0px;
+    }
+
+    .imac-image img {
+        height: 100%;
+    }
+
+    .image-disc,
+    .imac-disc {
+        width: 100%;
+        margin-top: 100px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    /* iCloud Section */
+    .icloud {
+        height: 100vh;
+        width: 100%;
+    }
+
+    .icloud h2 {
+        font-size: 28px;
+    }
+
+    .icloud p {
+        margin-top: -100px;
+    }
+
+    /* Games Section */
+    .games-img img {
+        width: 70%;
+    }
+
+    /* Best Choice Section */
+    .best-choice {
+        height: 35vh;
+    }
+
+    .best-choice h2 {
+        margin-top: 20px;
+    }
+
+    .best-choice-img img {
+        width: 100%;
+        transform: translate(-50px, 40px);
+
+    }
+
+    /* Twitter Section */
+    .t-circle {
+        height: 25vh;
+    }
+
+    .t-circle {
+        width: 70%;
+    }
+
+    .popular {
+        height: 25vh;
+    }
+
+    /* Display Section */
+    .display {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .diplay-img {
+        width: 100%;
+        margin: 0;
+    }
+
+    .display h3 {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+
+    .grid-layout {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "iphone6s iphone6s"
+            "learn-more learn-more"
+            "keyboard keyboard"
+            "imac imac"
+            "icloud icloud"
+            "games games"
+            "best-choice best-choice"
+            "twitter twitter"
+            "popular popular"
+            "display display";
+    }
+
+    /* General text size adjustments */
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-size: smaller;
+    }
+
+    .learn-more-container h1 {
+        font-size: 24px;
+    }
+
+    /* Further image and layout adjustments */
+    .iphone6s-img img {
+        width: 80px;
+    }
+
+    .keyboard-image img,
+    .imac-image img,
+    .icloud-img img {
+        width: 90%;
+    }
+
+    .games-img img {
+        width: 90%;
+    }
+
+    .best-choice-img img {
+        width: 100%;
+    }
+
+    .display h3 {
+        font-size: 18px;
+    }
+}

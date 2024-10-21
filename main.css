@@ -1,0 +1,605 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body,
+html {
+    height: 100%;
+}
+
+
+
+
+/* ----------General Grid Layuot */
+.grid-layout {
+    height: 180vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 0.5fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "iphone6s iphone6s iphone6s iphone6s iphone6s iphone6s learn-more learn-more learn-more learn-more learn-more learn-more"
+        "keyboard keyboard keyboard imac imac imac imac imac imac icloud icloud icloud"
+        "games games games best-choice best-choice best-choice best-choice best-choice best-choice icloud icloud icloud"
+        "twitter twitter twitter popular popular popular display display display display display display";
+}
+
+.iphone6s {
+    grid-area: iphone6s;
+}
+
+.learn-more {
+    grid-area: learn-more;
+}
+
+.keyboard {
+    grid-area: keyboard;
+}
+
+.icloud {
+    grid-area: icloud;
+}
+
+.imac {
+    grid-area: imac;
+}
+
+.games {
+    grid-area: games;
+}
+
+.best-choice {
+    grid-area: best-choice;
+}
+
+.twitter {
+    grid-area: twitter;
+}
+
+.popular {
+    grid-area: popular;
+}
+
+.display {
+    grid-area: display;
+}
+
+/* -------------------------- */
+.iphone6s {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.iphone6s-dis {
+    margin-left: 100px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.iphone6s h4 {
+    font-family: Montserrat, sans-serif;
+    color: #9fa3a7;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase
+}
+
+.iphone6s h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: Arvo, sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 200;
+    color: #333;
+
+}
+
+.iphone6s p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: #9fa3a7;
+}
+
+.iphone6s-img {
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0 100px;
+
+}
+
+.iphone6s-img img {
+    margin-top: 200px;
+    max-width: 100%;
+}
+
+/* ----------------------- */
+.learn-more {
+    padding: 10%;
+    background-color: #F7F8F9;
+    width: 100%;
+    height: auto;
+
+    justify-content: center;
+}
+
+.learn-more-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.learn-more-container h4 {
+    font-family: Montserrat, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #9fa3a7;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.learn-more-container h1 {
+    font-family: Arvo, sans-serif;
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 400;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.learn-more-container a {
+    color: #27b9c2;
+}
+
+/* ---------------------- */
+.keyboard {
+    background-color: #F05638;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.keyboard-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.keyboard-image img {
+    width: 60%;
+    height: auto;
+}
+
+.keyboard h2 {
+    font-family: Arvo, sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    color: white;
+    text-align: center;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.keyboard a {
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffc80a;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* --------------------- */
+
+
+.imac-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.image-disc {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: left;
+    width: 50%;
+    height: auto;
+    padding: 25px 25px 0px 25px;
+}
+
+.image-disc h4 {
+
+    font-family: Montserrat, sans-serif;
+    color: #9fa3a7;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.image-disc h3 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: Arvo, sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+.imac-disc {
+    padding: auto;
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-end;
+    align-items: center;
+    width: 50%;
+    padding: 25px 25px 0px 25px;
+}
+
+.imac-disc p {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 26px;
+    color: #9fa3a7;
+}
+
+.imac-disc a {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #27b9c2;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 26px;
+}
+
+.imac-image {
+    margin-top: 250px;
+    padding: 0;
+}
+
+.imac-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ---------------------- */
+
+.icloud {
+    background-color: #8F76BC;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding: 2px 50px;
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #8166B0;
+    border-radius: 100%;
+    padding: 20px;
+    margin-top: 50px;
+
+}
+
+.icloud-img {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: auto;
+}
+
+.text-block {
+    background-color: #8A72B6;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+}
+
+.text-block h4 {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 10px;
+    line-height: 23px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+}
+
+.flag-img img {
+    width: 50%;
+    height: auto;
+}
+
+.icloud-img img {
+    margin-top: 10px;
+    width: 75%;
+    height: auto;
+}
+
+.circle h3 {
+    color: white;
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.icloud h2 {
+    margin-top: -190px;
+    font-family: Arvo, sans-serif;
+    font-size: 32px;
+    line-height: 36px;
+    color: white;
+}
+
+.icloud p {
+    margin-top: -200px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.button-yellow {
+    margin-top: -200px;
+}
+
+.button-yellow a {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+
+    padding: 14px 28px;
+    border-radius: 50px;
+    background-color: #ffc80a;
+    color: #000;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    text-transform: uppercase
+}
+
+/* ------------------------- */
+
+.games {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    padding: 50px;
+}
+
+.games-img img {
+    width: 80%;
+    height: auto;
+    margin-right: 60px;
+}
+
+.games h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: Arvo, sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #333;
+}
+
+.games a {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    color: #27b9c2;
+}
+
+/* ---------------------- */
+.best-choice {
+    background-color: #93B6B7;
+    background-image: url(imgs/ux.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center bottom;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    position: relative;
+}
+
+.best-choice h4 {
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+    background-color: #fa684f;
+    font-size: 8px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.best-choice h2 {
+    font-family: Arvo, sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    color: white;
+    text-align: center;
+}
+
+.best-choice-img {
+    height: 50%;
+    width: auto;
+}
+
+.best-choice-img img {
+    max-width: 150%;
+    height: auto;
+    transform: translate(-100px, 88px);
+}
+
+/* ------------- */
+
+.twitter {
+    background-color: #38D5F4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.t-circle {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: #35CFED;
+    border-radius: 100%;
+    height: 100%;
+    width: 50%;
+}
+
+.t-img {
+    margin-left: 30px
+}
+
+.t-img img {
+    width: 60%;
+    height: auto;
+}
+
+.t-circle h4 {
+    text-align: center;
+    margin-top: -120px;
+    font-family: Arvo, sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+    color: white;
+    padding: 0 40px;
+}
+
+/* --------------- */
+.popular {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.popular h4 {
+    background-color: #7bc424;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+    font-size: 8px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.popular h3 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: Arvo, sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #333;
+}
+
+/* --------------- */
+.display {
+    background-color: #2C2C2C;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.diplay-img {
+    height: 100%;
+    margin-left: 100px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.diplay-img img {
+    width: 60%;
+    height: auto;
+}
+
+.display h3 {
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: Arvo, sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+    color: white;
+    text-align: left;
+}
